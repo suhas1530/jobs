@@ -171,13 +171,13 @@ app.use("/api/social", socialRoutes);
 
 
 
-app.use(express.static(distPath));
+// app.use(express.static(distPath));
 
-app.get("*", (req, res) => {
-  if (!req.path.startsWith("/api")) {
-    return res.sendFile(path.join(distPath, "index.html"));
-  }
-});
+// app.get("*", (req, res) => {
+//   if (!req.path.startsWith("/api")) {
+//     return res.sendFile(path.join(distPath, "index.html"));
+//   }
+// });
 
 
 
